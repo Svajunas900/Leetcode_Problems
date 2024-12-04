@@ -17,3 +17,10 @@ def strStr(haystack, needle):
             right += 1
         if right > len(haystack):
             return -1
+        
+#   Better implementation
+#     
+#   if needle in haystack:
+#     return haystack.find(needle)
+#   else:
+#     return -1
