@@ -19,3 +19,9 @@ def searchInsert(nums, target):
         else:
             left = mid + 1
     return left
+
+    # if target in nums:
+    #     return nums.index(target)
+    # else:
+    #     nums.append(target)
+    #     return sorted(nums).index(target)
