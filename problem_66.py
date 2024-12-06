@@ -15,3 +15,6 @@ def plusOne(digits):
         digits[i] = 0
         if i == 0:
             return [1] + digits
+    
+    
+    # return [int(i) for i in str(int("".join([str(x) for x in digits])) + 1)]
