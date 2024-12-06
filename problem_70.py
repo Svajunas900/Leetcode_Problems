@@ -4,7 +4,7 @@ def climbStairs(n) :
     
     prev1 = 3
     prev2 = 2
-    curr = 0
+    cur = 0
     for _ in range(3, n):
         cur = prev1 + prev2
         prev2 = prev1
