@@ -8,6 +8,8 @@ Given a binary tree, determine if it is height-balanced
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+
 class Solution:
     def isBalanced(self, root):
             return self.height(root) != -1
