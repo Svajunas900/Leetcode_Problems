@@ -6,7 +6,7 @@ A binary tree's maximum depth is the number of nodes along the longest path from
 
 """
 
-def maxDepth(root):
+def maxDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     return 1 + max(maxDepth(root.left), maxDepth(root.right))

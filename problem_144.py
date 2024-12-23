@@ -5,7 +5,7 @@ Given the root of a binary tree, return the preorder traversal of its nodes' val
 
 
 
-def preorderTraversal(root) :
+def preorderTraversal(root: Optional[TreeNode]) -> list:
     res = []
     if not root:
         return res

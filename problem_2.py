@@ -14,7 +14,7 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 #         self.next = next
 
 
-def addTwoNumbers(l1, l2):
+def addTwoNumbers(l1: list, l2: list) -> None:
     dummy = ListNode()
     result = dummy
     total = carry = 0

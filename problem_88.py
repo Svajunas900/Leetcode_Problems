@@ -11,7 +11,7 @@ and the last n elements are set to 0 and should be ignored. nums2 has a length o
 """
 
 
-def merge(nums1, m, nums2, n):
+def merge(nums1: list, m: int, nums2: list, n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
         """

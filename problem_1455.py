@@ -7,7 +7,7 @@ If searchWord is a prefix of more than one word, return the index of the first w
 If there is no such word return -1. A prefix of a string s is any leading contiguous substring of s. """
 
 
-def isPrefixOfWord(sentence, searchWord):
+def isPrefixOfWord(sentence: str, searchWord: str) -> int:
     words = sentence.split()
     result = [
         index + 1 for index,

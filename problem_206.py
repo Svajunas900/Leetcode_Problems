@@ -5,7 +5,7 @@ Given the head of a singly linked list, reverse the list, and return the reverse
 
 
 
-def reverseList(head):
+def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
         return 
     previous = None

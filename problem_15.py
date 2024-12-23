@@ -7,7 +7,7 @@ Notice that the solution set must not contain duplicate triplets.
 """
 
 
-def threeSum(nums):
+def threeSum(nums: list) -> list:
     result = []
     nums = sorted(nums)
     previous = None

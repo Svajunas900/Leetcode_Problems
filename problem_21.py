@@ -15,7 +15,7 @@ Return the head of the merged linked list.
 #         self.next = next
 
 
-def mergeTwoLists(list1, list2):
+def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0)
     current = dummy
     while list1 and list2:

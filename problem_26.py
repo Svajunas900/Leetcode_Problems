@@ -11,7 +11,7 @@ The remaining elements of nums are not important as well as the size of nums.
 Return k.
 """
 
-def removeDuplicates(nums):
+def removeDuplicates(nums: list) -> int:
     num = set(nums)
     print(num)
     return len(num)

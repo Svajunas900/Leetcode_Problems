@@ -9,7 +9,7 @@ No two characters may map to the same character, but a character may map to itse
 """
 
 
-def isIsomorphic(s, t):
+def isIsomorphic(s: str, t: str) -> bool:
     map1 = []
     map2 = []
     for idx in s:

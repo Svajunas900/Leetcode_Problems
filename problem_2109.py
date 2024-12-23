@@ -8,7 +8,7 @@ which are at indices 5 and 9 respectively. Thus, we obtain "Enjoy Your Coffee".
 Return the modified string after the spaces have been added."""
 
 
-def addSpaces(s, spaces):
+def addSpaces(s: str, spaces: list) -> str:
     leftPointer = 0
     result = []
     for i in spaces:

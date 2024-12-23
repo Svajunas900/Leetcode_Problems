@@ -12,7 +12,7 @@ Two binary trees are considered the same if they are structurally identical, and
 #         self.left = left
 #         self.right = right
 
-def isSameTree(p, q):
+def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     """Base Case 
     Checking if both Tree Nodes are None, if they are return True """
     if p is None and q is None:

@@ -8,7 +8,7 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0."""
 
 
-def maxProfit(prices):
+def maxProfit(prices:list) -> int:
     lowest = prices[0]
     max_profit = 0
     for price in prices:

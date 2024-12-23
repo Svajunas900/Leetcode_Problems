@@ -3,7 +3,7 @@
 Given a string s, find the length of the longest substring without repeating characters.
 """
 
-def lengthOfLongestSubstring(s):
+def lengthOfLongestSubstring(s: str) -> int:
     seen = {}
     i = 0
     res = 0

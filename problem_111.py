@@ -8,7 +8,7 @@ Note: A leaf is a node with no children.
 """
 
 
-def minDepth(root):
+def minDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     if None in [root.left, root.right]:

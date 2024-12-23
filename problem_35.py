@@ -7,7 +7,7 @@ You must write an algorithm with O(log n) runtime complexity.
 """
 
 
-def searchInsert(nums, target):
+def searchInsert(nums: list, target: int) -> int:
     left = 0
     right = len(nums) - 1
     while left <= right:

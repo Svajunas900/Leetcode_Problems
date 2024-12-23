@@ -6,7 +6,7 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 """
 
 
-def generate(numRows):
+def generate(numRows: int) -> list:
     if numRows == 0:
         return []
     if numRows == 1:

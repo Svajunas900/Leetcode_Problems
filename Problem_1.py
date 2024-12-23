@@ -5,7 +5,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order."""
 
 
-def twoSum(nums, target):
+def twoSum(nums: int, target:int) -> list:
     a_dict = {}
     for i, n in enumerate(nums):
         if target - n in a_dict:

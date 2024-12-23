@@ -11,10 +11,10 @@ Given a binary tree, determine if it is height-balanced
 
 
 class Solution:
-    def isBalanced(self, root):
+    def isBalanced(self, root: Optional[TreeNode]) -> int:
             return self.height(root) != -1
 
-    def height(self, node):
+    def height(self, node: Optional[TreeNode]) -> int:
         if not node:
             return 0
         leftHeight = self.height(node.left)

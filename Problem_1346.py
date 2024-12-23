@@ -7,7 +7,7 @@ i != j
 arr[i] == 2 * arr[j]"""
 
 
-def checkIfExist(arr):
+def checkIfExist(arr: list) -> bool:
     a_dict = {}
     for index, value in enumerate(arr):
         if value * 2 in a_dict and a_dict[value * 2] != index:

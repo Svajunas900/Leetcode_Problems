@@ -5,7 +5,7 @@ If there is no common prefix, return an empty string "".
 """
 
 
-def longestCommonPrefix(strs):
+def longestCommonPrefix(strs: list) -> str:
     result = ""
     strs = sorted(strs)
     first = strs[0]

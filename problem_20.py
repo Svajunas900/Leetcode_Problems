@@ -10,7 +10,7 @@ Every close bracket has a corresponding open bracket of the same type.
 """
 
 
-def isValid(s):
+def isValid(s: list) -> bool:
     stack = []
     for i in s:
         if i in "{([":

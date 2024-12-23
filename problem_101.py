@@ -11,13 +11,13 @@ Given the root of a binary tree, check whether it is a mirror of itself (i.e., s
 #         self.left = left
 #         self.right = right
 
-def isSymmetric(root):
+def isSymmetric(root: Optional[TreeNode]) -> bool:
     """Checking if root exists if exists call isMirror"""
     if not root:
         return True
     return isMirror(root.left,  root.right)
 
-def isMirror(self, subTreeLeft, subTreeRight):
+def isMirror(self, subTreeLeft: Optional[TreeNode], subTreeRight: Optional[TreeNode]) -> bool:
     """Base Case
     Checking if both is None
     """

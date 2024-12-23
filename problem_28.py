@@ -6,7 +6,7 @@ or -1 if needle is not part of haystack.
 """
 
 
-def strStr(haystack, needle):
+def strStr(haystack: str, needle: str) -> int:
     left = 0 
     right = len(needle)
     for i in range(len(haystack)):

@@ -14,7 +14,7 @@ A leaf is a node with no children.
 #         self.right = right
 
 
-def hasPathSum(root, targetSum):
+def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
     if not root:
         return False
     if not root.left and not root.right:

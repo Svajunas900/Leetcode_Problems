@@ -5,7 +5,7 @@ and false otherwise.
 """
 
 
-def isPalindrome(x):
+def isPalindrome(x: int) -> bool:
     reverse = ""
     a_string = str(x)
     for i in range(len(a_string)-1, -1, -1):

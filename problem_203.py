@@ -11,7 +11,7 @@ remove all the nodes of the linked list that has Node.val == val, and return the
 #         self.val = val
 #         self.next = next
 
-def removeElements(head, val):
+def removeElements(head: Optional[ListNode], val:int) -> Optional[ListNode]:
     if not head:
         return 
     previous = ListNode(0, head)

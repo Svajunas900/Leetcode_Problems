@@ -6,7 +6,7 @@ You must implement a solution with a linear runtime complexity and use only cons
 """
 
 
-def singleNumber(nums):
+def singleNumber(nums: list) -> int:
     uniqNum = 0
     for idx in nums:
         uniqNum ^= idx

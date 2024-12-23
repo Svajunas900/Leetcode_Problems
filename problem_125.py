@@ -7,7 +7,7 @@ Given a string s, return true if it is a palindrome, or false otherwise.
 """
 
 
-def isPalindrome(s):
+def isPalindrome(s:str) -> bool:
     clean_text = "".join(char for char in s if char.isalnum())
     clean_text = clean_text.lower()
     if len(clean_text) == 0:

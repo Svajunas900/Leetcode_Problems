@@ -10,7 +10,7 @@ Return true if there is a cycle in the linked list. Otherwise, return false.
 """
 
 
-def hasCycle(head):
+def hasCycle(head: Optional[ListNode]) -> bool:
     fast = slow = head
     while fast and fast.next:
         fast = fast.next.next
