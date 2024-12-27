@@ -4,7 +4,7 @@ Given the head of a sorted linked list, delete all duplicates such that each ele
 Return the linked list sorted as well.
 """
 
-def deleteDuplicates(head):
+def deleteDuplicates(head: Optional[ListNode])  -> Optional[ListNode]:
     curr = head
     while curr and curr.next:
         print(curr.val)
