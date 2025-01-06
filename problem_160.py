@@ -12,3 +12,4 @@ def getIntersectionNode(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         a = headB if not a else a.next
         b = headA if not b else b.next
     return a
+
