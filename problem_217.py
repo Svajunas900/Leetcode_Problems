@@ -12,3 +12,5 @@ def containsDuplicate(self, nums: list) -> bool:
             return True
         dup.add(i)
     return False
+
+    # return sorted(list(set(nums))) != sorted(nums)

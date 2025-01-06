@@ -12,13 +12,13 @@ Return true if n is a happy number, and false if not.
 
 def isHappy(n: int) -> bool:
     dummy = n
-    while True:
+    visited = set()
+    while dummy not in visited:
+        visited.add(dummy)
         res = 0
         for i in str(dummy):
             res += int(i)**2
         dummy = res
-        if dummy == i:
-            break
-    return True
-
-isHappy(2)
+        if dummy == 1:
+            return True
+    return False
