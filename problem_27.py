@@ -10,6 +10,11 @@ Change the array nums such that the first k elements of nums contain the element
 The remaining elements of nums are not important as well as the size of nums.
 Return k.
 """
+
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
 def removeElement(nums: List[int], val: int) -> int:
     counter = 0
     while val in nums:

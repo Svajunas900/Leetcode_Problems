@@ -3,7 +3,10 @@
 Given the head of a singly linked list, reverse the list, and return the reversed list.
 """
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 
 def reverseList(head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
