@@ -10,6 +10,11 @@ Return the maximum amount of water a container can store.
 Notice that you may not slant the container.
 """
 
+
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
 def maxArea(height: list) -> int:
     max_area = 0
     left = 0
