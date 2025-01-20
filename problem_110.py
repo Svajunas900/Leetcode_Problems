@@ -9,7 +9,10 @@ Given a binary tree, determine if it is height-balanced
 #         self.left = left
 #         self.right = right
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(n)
+"""
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> int:
             return self.height(root) != -1
