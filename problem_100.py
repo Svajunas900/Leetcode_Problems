@@ -12,6 +12,11 @@ Two binary trees are considered the same if they are structurally identical, and
 #         self.left = left
 #         self.right = right
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def isSameTree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
     """Base Case 
     Checking if both Tree Nodes are None, if they are return True """
