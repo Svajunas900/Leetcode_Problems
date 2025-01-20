@@ -6,6 +6,10 @@ it reads the same forward and backward. Alphanumeric characters include letters 
 Given a string s, return true if it is a palindrome, or false otherwise.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 def isPalindrome(s:str) -> bool:
     clean_text = "".join(char for char in s if char.isalnum())
