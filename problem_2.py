@@ -13,6 +13,14 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 #         self.val = val
 #         self.next = next
 
+"""Time complexity Big O(max(n, m))
+In the worst case scenario while loop will iterate through both linked lists n and m,
+plus one because it can have carry leftover
+
+Space complexity Big O(max(n, m))
+On each iteration it creates node and appends it to result list.
+Therefore complexity of the function is max(n, m) where n and m is the length of two linked lists
+"""
 
 def addTwoNumbers(l1: list, l2: list) -> None:
     dummy = ListNode()
