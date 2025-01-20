@@ -8,7 +8,10 @@ Given the head of a linked list, remove the nth node from the end of the list an
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 def removeNthFromEnd(head: Optional[ListNode], n: int) -> Optional[ListNode]:
     if not head:
         return head
