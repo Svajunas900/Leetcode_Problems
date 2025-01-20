@@ -12,6 +12,11 @@ return the index of target if it is in nums, or -1 if it is not in nums.
 You must write an algorithm with O(log n) runtime complexity.
 """
 
+"""Time complexity Big O(log n)
+
+Space complexity Big O(1)
+"""
+
 def search(nums: List[int], target: int) -> int:
     low, high = 0, len(nums) - 1
 
