@@ -10,13 +10,16 @@ To accommodate this, nums1 has a length of m + n, where the first m elements den
 and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 """
 
+"""Time complexity Big O(m+n)
 
+Space complexity Big O(1)
+"""
 def merge(nums1: list, m: int, nums2: list, n: int) -> None:
-        """
-        Do not return anything, modify nums1 in-place instead.
-        """
-        for i in range(m+n):
-            if nums1[i] == 0 and i > m-1:
-                nums1[i] = nums2[n-1]
-                n -= 1
-        nums1 = nums1.sort()
+    """
+    Do not return anything, modify nums1 in-place instead.
+    """
+    for i in range(m+n):
+        if nums1[i] == 0 and i > m-1:
+            nums1[i] = nums2[n-1]
+            n -= 1
+    nums1 = nums1.sort()
