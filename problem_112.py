@@ -13,6 +13,10 @@ A leaf is a node with no children.
 #         self.left = left
 #         self.right = right
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 def hasPathSum(root: Optional[TreeNode], targetSum: int) -> bool:
     if not root:
