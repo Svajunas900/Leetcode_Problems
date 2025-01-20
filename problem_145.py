@@ -3,11 +3,18 @@
 Given the root of a binary tree, return the postorder traversal of its nodes' values.
 """
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
+
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 
 def postorderTraversal(root) -> list:
