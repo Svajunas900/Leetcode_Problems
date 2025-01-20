@@ -7,7 +7,10 @@ The minimum depth is the number of nodes along the shortest path from the root n
 Note: A leaf is a node with no children.
 """
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(n)
+"""
 def minDepth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
