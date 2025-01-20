@@ -5,6 +5,11 @@ Given an integer array nums where the elements are sorted in ascending order, co
 height-balanced binary search tree.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def sortedArrayToBST(self, nums: list) -> Optional[TreeNode]:
   total_nums = len(nums)
   if not total_nums:
