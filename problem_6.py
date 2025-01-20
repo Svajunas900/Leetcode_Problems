@@ -3,6 +3,12 @@
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 
 (you may want to display this pattern in a fixed font for better legibility)
 """
+
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def convert(s: str, numRows: int) -> str:
     if numRows == 1 or numRows >= len(s):
         return s
