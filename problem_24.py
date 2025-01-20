@@ -10,6 +10,11 @@ You must solve the problem without modifying the values in the list's nodes (i.e
 #         self.val = val
 #         self.next = next
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
+
 def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
     if not head:
         return head
