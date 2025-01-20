@@ -18,6 +18,11 @@ Depending on your language, the queue may not be supported natively.
 You may simulate a queue using a list or deque (double-ended queue) as long as you use only a queue's standard operations.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 class MyStack:
 
   def __init__(self):
