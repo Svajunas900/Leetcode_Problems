@@ -5,8 +5,13 @@ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 """
 
 """Time complexity Big O(n)
+It iterates through s making time complexity O(n)
+Updating curRow and goingDown are O(1)
+output joining all rows is O(n)
 
 Space complexity Big O(n)
+curRow and goingDown is equal to O(1)
+rows is equal to input s or numRows making it O(n)
 """
 
 def convert(s: str, numRows: int) -> str:

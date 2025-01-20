@@ -12,8 +12,11 @@ Notice that you may not slant the container.
 
 
 """Time complexity Big O(n)
+n is the length of height list while loop moves pointer right
+or left in each operation, so at most it will run n times
 
 Space complexity Big O(1)
+max_area, area, left and right has contant space O(1)
 """
 def maxArea(height: list) -> int:
     max_area = 0

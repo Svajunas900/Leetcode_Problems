@@ -5,7 +5,11 @@ If there is no common prefix, return an empty string "".
 """
 
 
-"""Time complexity Big O(m * n log m)
+"""Time complexity Big O(m log m)
+
+sorting the list of string takes (m⋅log(k))
+m is the average length of the strings in the list
+k is the number of string in the list
 
 Space complexity Big O(m + n)
 """
