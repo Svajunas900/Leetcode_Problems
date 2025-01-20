@@ -14,7 +14,10 @@ Return the head of the merged linked list.
 #         self.val = val
 #         self.next = next
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
     dummy = ListNode(0)
     current = dummy
