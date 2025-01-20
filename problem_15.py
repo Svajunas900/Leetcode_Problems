@@ -6,6 +6,11 @@ return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, an
 Notice that the solution set must not contain duplicate triplets.
 """
 
+"""Time complexity Big O(n^2)
+
+Space complexity Big O(n)
+"""
+
 
 def threeSum(nums: list) -> list:
     result = []
