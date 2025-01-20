@@ -5,7 +5,10 @@ Given a non-empty array of integers nums, every element appears twice except for
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 """
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 def singleNumber(nums: list) -> int:
     uniqNum = 0
     for idx in nums:
