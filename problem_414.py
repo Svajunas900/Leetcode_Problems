@@ -3,7 +3,10 @@
 Given an integer array nums, return the third distinct maximum number in this array. 
 If the third maximum does not exist, return the maximum number.
 """
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 
 def thirdMax(self, nums: List[int]) -> int:
   if len(set(nums)) < 3:

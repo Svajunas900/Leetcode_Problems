@@ -8,6 +8,11 @@ You must solve the problem without using any built-in library for handling large
 You must also not convert the inputs to integers directly.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def addStrings(num1: str, num2: str) -> str:
   length_of_num1 = len(num1) - 1
   length_of_num2 = len(num2) - 1

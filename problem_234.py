@@ -3,6 +3,12 @@
 Given the head of a singly linked list, 
 return true if it is a palindrome or false otherwise.
 """
+
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def isPalindrome(self, head) -> bool:
         self.curr = head
         return self.solve(head)

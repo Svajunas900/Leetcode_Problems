@@ -7,6 +7,11 @@ The last row of the staircase may be incomplete.
 Given the integer n, return the number of complete rows of the staircase you will build.
 """
 
+"""Time complexity Big O(log n)
+
+Space complexity Big O(1)
+"""
+
 def arrangeCoins(self, n: int) -> int:
   left,right=1,n
   while left<=right:

@@ -15,6 +15,11 @@ Each range [a,b] in the list should be output as:
 "a" if a == b
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def summaryRanges(self, nums: list) -> list:
   ranges = [] # [start, end] or [x, y]
   for n in nums:

@@ -9,6 +9,11 @@ The returned queue should be formatted as an array queue, where queue[j] = [hj, 
 is the attributes of the jth person in the queue (queue[0] is the person at the front of the queue).
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def reconstructQueue(people: list) -> list:
   people = sorted(people, key=lambda x: (-x[0], x[1]))
   res = []

@@ -5,6 +5,11 @@ Given the root of a binary tree, return all root-to-leaf paths in any order.
 A leaf is a node with no children.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def binaryTreePaths(self, root: Optional[TreeNode]) -> list:
     return self.dfs(root, "")
 

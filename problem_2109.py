@@ -7,7 +7,10 @@ For example, given s = "EnjoyYourCoffee" and spaces = [5, 9], we place spaces be
 which are at indices 5 and 9 respectively. Thus, we obtain "Enjoy Your Coffee".
 Return the modified string after the spaces have been added."""
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(n)
+"""
 def addSpaces(s: str, spaces: list) -> str:
     leftPointer = 0
     result = []

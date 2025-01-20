@@ -17,6 +17,10 @@ Depending on your language, the stack may not be supported natively.
 You may simulate a stack using a list or deque (double-ended queue) as long as you use only a stack's standard operations.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 class MyQueue:
 

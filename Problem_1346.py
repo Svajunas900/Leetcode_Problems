@@ -6,6 +6,10 @@ i != j
 0 <= i, j < arr.length
 arr[i] == 2 * arr[j]"""
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 def checkIfExist(arr: list) -> bool:
     a_dict = {}
