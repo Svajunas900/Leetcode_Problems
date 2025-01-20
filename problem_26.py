@@ -11,6 +11,11 @@ The remaining elements of nums are not important as well as the size of nums.
 Return k.
 """
 
+"""Time complexity Big O(1)
+
+Space complexity Big O(n)
+"""
+
 def removeDuplicates(nums: list) -> int:
     num = set(nums)
     print(num)
