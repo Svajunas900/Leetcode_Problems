@@ -5,6 +5,11 @@ If there is no common prefix, return an empty string "".
 """
 
 
+"""Time complexity Big O(m * n log m)
+
+Space complexity Big O(m + n)
+"""
+
 def longestCommonPrefix(strs: list) -> str:
     result = ""
     strs = sorted(strs)
