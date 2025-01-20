@@ -7,7 +7,10 @@ Return the sum of the three integers.
 You may assume that each input would have exactly one solution.
 """
 
+"""Time complexity Big O(n^2)
 
+Space complexity Big O(n)
+"""
 def threeSumClosest(nums: list, target: int) -> int:
     nums.sort()
     closest = nums[0] + nums[1] + nums[2]
