@@ -9,7 +9,10 @@ Note that pos is not passed as a parameter.
 Return true if there is a cycle in the linked list. Otherwise, return false.
 """
 
+"""Time complexity Big O(n)
 
+Space complexity Big O(1)
+"""
 def hasCycle(head: Optional[ListNode]) -> bool:
     fast = slow = head
     while fast and fast.next:
