@@ -5,6 +5,10 @@ If the two linked lists have no intersection at all, return null.
 
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
 
 def getIntersectionNode(headA: ListNode, headB: ListNode) -> Optional[ListNode]:
     a, b = headA, headB
