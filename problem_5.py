@@ -3,7 +3,22 @@
 Given a string s, return the longest palindromic substring in s.
 """
 
+"""Time complexity Big O(n^2)
+Outer loop runs 0 to len(s)-1 iterating through each character in the string
+Therefore this results in Big O(n)
+Helper function expand_around_center is called twice and it 
+checks both odd and even-length palindromes. 
+In worst case scenario expand_around_center function could expand
+up to the entire length of the string. So overall time complexity
+O(n^2)
 
+
+Space complexity Big O(n)
+start, end, odd, even, max_length are not dependent on the input
+so the it has constant space complexity O(1)
+The space required to store final string depends on the s input so the
+space complexity is O(n)
+"""
 def longestPalindrome(s: str) -> str:
     if len(s) == 0:
         return s
