@@ -11,6 +11,11 @@ Given the root of a binary tree, check whether it is a mirror of itself (i.e., s
 #         self.left = left
 #         self.right = right
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
+
 def isSymmetric(root: Optional[TreeNode]) -> bool:
     """Checking if root exists if exists call isMirror"""
     if not root:
