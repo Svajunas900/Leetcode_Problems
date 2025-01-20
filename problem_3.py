@@ -3,6 +3,19 @@
 Given a string s, find the length of the longest substring without repeating characters.
 """
 
+"""Time complexity Big O(n)
+Function iterates through s length,
+Therefore dominant term n 
+built-in function max has complexity of O(1)
+updating seen[currentChar], res, i is constant time operation O(1)
+checking if current in seen is O(1) as well
+
+Space complexity Big O(n)
+i, j, res are scalar so the Big O(1) space
+Due to the space used by the dictionary seen complexity of this
+function is O(n)
+"""
+
 def lengthOfLongestSubstring(s: str) -> int:
     seen = {}
     i = 0
