@@ -4,6 +4,10 @@ Given an integer array nums, return true if any value appears at least twice in 
 and return false if every element is distinct.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(n)
+"""
 
 def containsDuplicate(self, nums: list) -> bool:
     dup = set()
