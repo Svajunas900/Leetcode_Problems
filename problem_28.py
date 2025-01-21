@@ -5,6 +5,10 @@ return the index of the first occurrence of needle in haystack,
 or -1 if needle is not part of haystack.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
 
 def strStr(haystack: str, needle: str) -> int:
     left = 0 

@@ -7,6 +7,11 @@ The large integer does not contain any leading 0's.
 Increment the large integer by one and return the resulting array of digits.
 """
 
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
+
 def plusOne(digits: list) -> list:
     for i in range(len(digits)-1,-1,-1):
         if digits[i]+1 != 10:

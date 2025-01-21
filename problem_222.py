@@ -11,6 +11,7 @@ Design an algorithm that runs in less than O(n) time complexity.
 """
 
 
+
 def countNodes(self, root: Optional[TreeNode]) -> int:
   if not root:
       return 0

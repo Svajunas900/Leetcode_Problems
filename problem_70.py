@@ -1,3 +1,8 @@
+"""Time complexity Big O(n)
+
+Space complexity Big O(1)
+"""
+
 def climbStairs(n: int) -> int:
     if n <= 3:
         return n
