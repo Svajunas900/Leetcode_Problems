@@ -5,6 +5,12 @@ return the average value of the nodes on each level in the form of an array.
 Answers within 10-5 of the actual answer will be accepted.
 """
 
+"""Time complexity Big O(n)
+Time complexity depends on how much nodes are in the tree 
+
+Space complexity Big O(n)
+Space as well
+"""
 
 def averageOfLevels(self, root: Optional[TreeNode]) -> List[float]:
   q, ans = [root], []
