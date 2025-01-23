@@ -6,6 +6,13 @@ Find a contiguous subarray whose length is equal to k that has the maximum avera
 Any answer with a calculation error less than 10-5 will be accepted.
 """
 
+"""Time complexity Big O(n)
+In the worst case scenario while will go through all nums length
+
+Space complexity Big O(1)
+Only using constant space
+"""
+
 def findMaxAverage(nums: list, k: int) -> float:
   result = 0
   left = 0
