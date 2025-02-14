@@ -12,7 +12,7 @@ Space complexity Big O(1)
 INT_MAX, INT_MIN, reversed_x, sign, x are all constant space
 """
 
-def reverse(self, x: int) -> int:
+def reverse(x: int) -> int:
   INT_MAX, INT_MIN = 2**31 - 1, -2**31
   reversed_x = 0
   sign = -1 if x < 0 else 1
