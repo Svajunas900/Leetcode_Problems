@@ -14,7 +14,7 @@ Space complexity O(n)
 Using dictionary to store n elements, where n is the number of elements in the
 input list nums
 """
-def twoSum(nums: int, target:int) -> list: 
+def twoSum(nums: list[int], target:int) -> list: 
     a_dict = {}
     for i, n in enumerate(nums):
         if target - n in a_dict:
