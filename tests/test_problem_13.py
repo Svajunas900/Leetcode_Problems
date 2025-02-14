@@ -2,19 +2,6 @@ import unittest
 from problem_13 import romanToInt
 
 
-test_data_success = [("MCMXCIV", 1994),
-             ("MCCIV", 1204),
-             ( "MCMX", 1910),
-             ( "MXCIV", 1094),
-             ]
-
-test_data_failure = [(122, True),
-             ("MCMXCIV", "bb"),
-             ( "MCMXCIV", 3212),
-             ( 241, -321),
-             ]
-
-
 class TestThreeSum(unittest.TestCase):
   def test_success(self):
     self.assertEqual(romanToInt("MCCIV"), 1204)
