@@ -16,5 +16,5 @@ The result format is in the following example.
 
 import pandas as pd
 
-def find_products(products: pd.DataFrame) -> pd.DataFrame:
-    return products[(products["low_fats"] == "Y") & (products["recyclable"] == "Y")][["product_id"]]
+def not_boring_movies(cinema: pd.DataFrame) -> pd.DataFrame:
+    return cinema[::2][cinema.description != 'boring'].sort_values('rating', ascending = False)
