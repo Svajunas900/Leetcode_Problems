@@ -14,3 +14,9 @@ The result format is in the following example.
 
 
 # SELECT name, population, area FROM World WHERE area >= 3000000 OR population >= 25000000;
+
+import pandas as pd
+
+def big_countries(world: pd.DataFrame) -> pd.DataFrame:
+  return world[(world["population"] >= 25000000) | 
+               (world["area"] >= 3000000)][["name", "population", "area"]]
