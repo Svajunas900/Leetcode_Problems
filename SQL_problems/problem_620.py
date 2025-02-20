@@ -13,3 +13,8 @@ The result format is in the following example.
 # WHERE description != "boring" 
 # AND id % 2 = 1 
 # ORDER BY rating DESC;
+
+import pandas as pd
+
+def find_products(products: pd.DataFrame) -> pd.DataFrame:
+    return products[(products["low_fats"] == "Y") & (products["recyclable"] == "Y")][["product_id"]]
