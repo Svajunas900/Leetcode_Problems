@@ -10,3 +10,12 @@ The result format is in the following example.
 
 # SELECT name FROM Employee WHERE id IN 
 # (SELECT managerId FROM Employee GROUP BY managerId HAVING COUNT(*) >= 5);
+
+import pandas as pd
+
+def find_managers(employee: pd.DataFrame) -> pd.DataFrame:
+  employee.groupby("managerId").count() 
+  managers = employee.groupby('managerId', as_index=False)\
+  .agg(reporting=('id', 'count'),)\
+  .query('5 <= reporting')['managerId']
+  return employee[employee['id'].isin(managers)][['name']]
