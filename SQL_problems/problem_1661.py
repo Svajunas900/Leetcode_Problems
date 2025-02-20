@@ -19,3 +19,12 @@ The result format is in the following example.
 #     - (select avg(a1.timestamp) 
 #        from Activity a1 where a1.activity_type = 'start' and a1.machine_id = a.machine_id), 3) 
 # as processing_time from Activity a GROUP BY a.machine_id
+
+import pandas as pd
+
+def get_average_time(activity: pd.DataFrame) -> pd.DataFrame:
+  return activity.pivot(index=["machine_id", "process_id"], columns='activity_type', values='timestamp')\
+          .groupby("machine_id")\
+          .apply(lambda x: (x['end'] - x['start']).mean().round(3))\
+          .rename("processing_time")\
+          .reset_index()
