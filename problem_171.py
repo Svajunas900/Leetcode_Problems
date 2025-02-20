@@ -5,6 +5,7 @@ Given a string columnTitle that represents the column title as appears in an Exc
 return its corresponding column number.
 """
 
+
 def titleToNumber(columnTitle: str) -> int:
   col_num = 0
   for char in columnTitle:
