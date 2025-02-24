@@ -4,6 +4,7 @@ import pandas as pd
 def test_rising_temperature():
   pass
 
+
 # def rising_temperature(weather: pd.DataFrame) -> pd.DataFrame:
 #     weather.sort_values(by='recordDate', inplace=True)
 #     return weather[
