@@ -13,9 +13,10 @@ def tribonacci(n: int) -> int:
           return memo[n]
       if n == 0:
           return 0
-      if n == 1 or n == 2:
+      elif n == 1 or n == 2:
           return 1
-      result = _helper(n-1) + _helper(n-2) + _helper(n-3)
-      memo[n] = result
-      return result
+      else:
+          result = _helper(n-1) + _helper(n-2) + _helper(n-3)
+          memo[n] = result
+          return result
   return _helper(n)
