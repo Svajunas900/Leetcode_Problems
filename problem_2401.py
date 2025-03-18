@@ -28,3 +28,5 @@ def longestNiceSubarray(nums: list[int]) -> int:
       max_length = max(max_length, right - left + 1)
       
   return max_length
+
+longestNiceSubarray([3,1,5,11,13])
