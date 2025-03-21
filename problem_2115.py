@@ -45,3 +45,5 @@ def findAllRecipes(recipes: list[str], ingredients: list[list[str]], supplies: l
                   queue.append(dependent_recipe)
   
   return result
+
+findAllRecipes(["bread","sandwich","burger"],[["yeast","flour"],["bread","meat"],["sandwich","meat","bread"]], ["yeast","flour","meat"])
