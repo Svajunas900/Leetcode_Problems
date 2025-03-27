@@ -16,7 +16,7 @@ Return the minimum index of a valid split. If no valid split exists, return -1.
 """
 from collections import Counter
 
-def minimumIndex(self, nums: list[int]) -> int:
+def minimumIndex(nums: list[int]) -> int:
   lcount = 0
   dominant, rcount = max(Counter(nums).items(), key=lambda x: x[1])
   for i, x in enumerate(nums):
@@ -25,3 +25,5 @@ def minimumIndex(self, nums: list[int]) -> int:
       if lcount > (i + 1) // 2 and rcount > (len(nums) - (i + 1)) // 2:
           return i
   return -1
+
+minimumIndex([1,2,2,2])
