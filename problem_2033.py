@@ -9,11 +9,11 @@ Return the minimum number of operations to make the grid uni-value. If it is not
 """
 
 def minOperations(grid: list[list[int]], x: int) -> int:
-      values = sorted([val for row in grid for val in row])
-      diff = [abs(val - values[0]) % x for val in values]
-      if any(d != 0 for d in diff):
-          return -1
-      median = values[len(values) // 2] 
-      operations = sum(abs(val - median) // x for val in values)
+  values = sorted([val for row in grid for val in row])
+  diff = [abs(val - values[0]) % x for val in values]
+  if any(d != 0 for d in diff):
+      return -1
+  median = values[len(values) // 2] 
+  operations = sum(abs(val - median) // x for val in values)
 
-      return operations   
+  return operations   
