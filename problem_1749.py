@@ -11,7 +11,7 @@ Note that abs(x) is defined as follows:
 If x is a negative integer, then abs(x) = -x.
 If x is a non-negative integer, then abs(x) = x.
 """
-def maxAbsoluteSum(self, nums: List[int]) -> int:
+def maxAbsoluteSum(nums: list[int]) -> int:
   curr, max_val = 0, float('-inf')
   n = len(nums)
 
