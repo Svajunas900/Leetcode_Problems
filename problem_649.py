@@ -22,7 +22,7 @@ The output should be "Radiant" or "Dire".
 from collections import deque
 
 
-def predictPartyVictory(self, senate: str) -> str:
+def predictPartyVictory(senate: str) -> str:
     n = len(senate)
     radiant = deque()
     dire = deque()
