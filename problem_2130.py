@@ -10,7 +10,7 @@ Given the head of a linked list with even length, return the maximum twin sum of
 """
 
 
-def pairSum(self, head: Optional[ListNode]) -> int:
+def pairSum(head: Optional[ListNode]) -> int:
   slow = head
   fast = head
   res = 0
