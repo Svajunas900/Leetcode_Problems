@@ -9,7 +9,30 @@ A binary tree's maximum depth is the number of nodes along the longest path from
 
 Space complexity Big O(n)
 """
-def maxDepth(root: Optional[TreeNode]) -> int:
+# DFS Solution
+def maxDepth(self, root: Optional[TreeNode]) -> int:
+        return self.dfs(root, 0)
+
+def dfs(self, root, depth):
+    if not root:
+        return depth
+    left = self.dfs(root.left, depth+1)
+    right = self.dfs(root.right, depth+1)
+    depth = max(left, right)
+    return depth
+
+# BFS Solution
+def maxDepth(self, root: Optional[TreeNode]) -> int:
     if not root:
         return 0
-    return 1 + max(maxDepth(root.left), maxDepth(root.right))
+    queue = [root]
+    depth = 0
+    while queue:
+        depth += 1
+        for _ in range(len(queue)):
+            node = queue.pop(0)
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+    return depth
