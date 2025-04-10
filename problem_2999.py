@@ -12,8 +12,7 @@ A string x is a suffix of a string y if and only if x is a substring of y that s
 For example, 25 is a suffix of 5125 whereas 512 is not.
 """
 
-
-def numberOfPowerfulInt(self, start: int, finish: int, limit: int, s: str) -> int:
+def numberOfPowerfulInt(start: int, finish: int, limit: int, s: str) -> int:
   def count(val:int) -> int:
       string_val = str(val)
       prefix = len(string_val) - len(s)
@@ -32,3 +31,5 @@ def numberOfPowerfulInt(self, start: int, finish: int, limit: int, s: str) -> in
               dp[i][1] = (limit + 1) * dp[i+1][0]
       return dp[0][1]
   return count(finish) - count(start-1)
+
+numberOfPowerfulInt(1, 6000, 4, "124")
