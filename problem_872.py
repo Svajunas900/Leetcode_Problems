@@ -14,10 +14,8 @@ def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> b
 def dfs(self, root, leafs):
   if not root:
       return None
-  if root.left:
-      self.dfs(root.left, leafs)
-  if root.right:
-      self.dfs(root.right, leafs)
+  self.dfs(root.left, leafs)
+  self.dfs(root.right, leafs)
   if not root.right and not root.left:
       leafs.append(root.val)
   return leafs
