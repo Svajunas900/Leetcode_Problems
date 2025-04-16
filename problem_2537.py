@@ -23,3 +23,25 @@ def countGood(nums: list[int], k: int) -> int:
             left += 1
         counter += left
     return counter
+
+
+# var countGood = function(nums, k) {
+#     let counter = 0;
+#     let left = 0;
+#     let hashMap = {};
+#     for(let i = 0; nums.length > i; i++){
+#         if(!(nums[i] in hashMap)){
+#             hashMap[nums[i]] = 0
+#         }
+#         k -= hashMap[nums[i]]
+#         hashMap[nums[i]] ++
+#         while(k <= 0){
+#             hashMap[nums[left]]--
+#             k += hashMap[nums[left]]
+#             left++
+#         }
+#         counter += left
+#     }
+#     return counter
+
+# };
