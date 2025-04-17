@@ -12,3 +12,17 @@ def countPairs(self, nums: list[int], k: int) -> int:
             if nums[i] == nums[x] and (i * x) % k == 0:
                 counter += 1
     return counter
+
+
+# Javascript solution
+# var countPairs = function(nums, k) {
+#     let counter = 0;
+#     for(let i = 0; nums.length > i; i++){
+#         for(let x = i+1; nums.length > x; x++){
+#             if(nums[x] === nums[i] && (x * i) % k === 0){
+#                 counter++
+#             }
+#         }
+#     }
+#     return counter
+# };
