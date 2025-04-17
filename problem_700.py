@@ -11,3 +11,11 @@ def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
     if root == None or root.val == val:
         return root
     return self.searchBST(root.right, val) if root.val < val else self.searchBST(root.left, val)
+
+
+# var searchBST = function(root, val) {
+#     if(root == null || root.val === val){
+#         return root
+#     }
+#     return root.val > val ? searchBST(root.left, val) : searchBST(root.right, val)
+# };
