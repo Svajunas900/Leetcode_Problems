@@ -6,7 +6,7 @@ Some problems have Big O notation for memory and space complexity
 
 ## Example of test cases
 
-`
+```
 test_data_success = [("babad", "aba"),
              ("cbbd", "bb"),
              ( "pwwkew", "ww"),
@@ -28,5 +28,4 @@ def test_longestPalindrome_success(nums, expected):
 @pytest.mark.parametrize("nums, expected", test_data_failure)
 def test_longestPalindrome_failure(nums, expected):
   assert longestPalindrome(nums) == expected
-  
-`
+```
