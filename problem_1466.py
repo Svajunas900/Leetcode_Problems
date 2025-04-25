@@ -16,7 +16,7 @@ It's guaranteed that each city can reach city 0 after reorder.
 import collections
 
 
-def min_reorder(n: int, connections: list[list[int]]) -> int:
+def min_reorder(connections: list[list[int]]) -> int:
     res = 0
     roads = set()
     graph = collections.defaultdict(list)
@@ -36,4 +36,4 @@ def min_reorder(n: int, connections: list[list[int]]) -> int:
     return res
 
 
-min_reorder(6, [[0, 1], [1, 3], [2, 3], [4, 0], [4, 5]])
+min_reorder([[0, 1], [1, 3], [2, 3], [4, 0], [4, 5]])
