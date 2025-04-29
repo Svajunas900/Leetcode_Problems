@@ -15,7 +15,7 @@ Both the left and right subtrees must also be binary search trees.
 """
 
 
-def findMode(self, root: Optional[TreeNode]) -> List[int]:
+def find_mode(self, root: Optional[TreeNode]) -> list[int]:
     counts = {}
     max_count = 0
     modes = []
